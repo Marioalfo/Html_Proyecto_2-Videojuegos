@@ -1,0 +1,32 @@
+body {
+    background-color: lightblue;
+
+}
+
+h1 {
+    color: red;
+}
+h2 {
+    color: red;
+}
+h3 {
+    color: red;
+}
+h4 {
+    color: red;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+article aside{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+aside div {
+    text-align: center;
+}
