@@ -2,35 +2,75 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./ASSETS/CSS/styles.css">
+
 </head>
 <body>
-<h1> Tipos de Videojuegos</h1>
-<p>En está página les presentare y describire un poco de la gran variedad de videojuegos que existen</p>
-<article>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Videojuegos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quien soy?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipos de juegos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Moba</a></li>
+                        <li><a class="dropdown-item" href="#">Battle Royale</a></li>
+                        <li><a class="dropdown-item" href="#">Shooters</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Datos Finales</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<article class="articulo">
     <h2> ¿Quien soy? </h2>
     <p>Soy un fanatico de los videojuegos desde que era niño, empezando por juegos de consola como la <strong>Play Station 2, la Wii</strong>, entre otras, para luego
-    pasar al mundo del <strong>computador</strong>, del cual se enfocara la página actual.
-        <aside>
-    <div>
-        <h4>Play 2</h4>
-        <img src="ASSETS/IMG/play2.jpg"/></div>
-    <div>
-        <h4>Wii</h4>
-        <img src="ASSETS/IMG/wii.jpg"/></div>
-    <div>
-        <h4>Pc Gamer</h4>
-        <img src="ASSETS/IMG/pc.jpg"/></div>
-</aside>
+        pasar al mundo del <strong>computador</strong>, del cual se enfocara la página actual.
+    <aside>
+        <div>
+            <h4>Play 2</h4>
+            <img src="ASSETS/IMG/play2.jpg"/></div>
+        <div>
+            <h4>Wii</h4>
+            <img src="ASSETS/IMG/wii.jpg"/></div>
+        <div>
+            <h4>Pc Gamer</h4>
+            <img src="ASSETS/IMG/pc.jpg"/></div>
+    </aside>
 </article>
-<section>
+<aside class="fondo_juegos">
+    <h1 > Tipos de Videojuegos</h1>
+    <p>En está página les presentare y describire un poco de la gran variedad de videojuegos que existen</p>
+
+<section class="articulo">
     <h2>MOBA</h2>
     <p>Este tipo de videojuegos consisten basicamente en que 10 personas compiten entre si, en 2 equipos de 5 integrantes
     <br>
     En donde el objetivo principal es destruir la base del enemigo, con el apoyo de tus aliados y los "minions", los cuales son personajes
     que te apoyan a avanzar hacia la base enemiga.</p>
-    <aside>
+    <aside class = "juegos">
         <img src="ASSETS/IMG/smite.jpg"/>
         <img src="ASSETS/IMG/League%20of%20Legends.png"/>
         <img src="ASSETS/IMG/Dota.jpg"/>
@@ -38,45 +78,52 @@
 
 </section>
 
-    <section>
+    <section class="intento">
         <h2>BattleRoyale</h2>
+    <section class = "batleroyale">
+
         <p>Este tipo de videojuego tiene la finalidad de ser el ultimo jugador en pie, osea, quedar vivo.
-
             <br>
-
             Por lo general se realiza en mapas abiertos, relativamente grandes. Puede ser por ejemplo, 100 personas en 1 mapa.
-
             <br>
-
             El principal referente es <strong>FORTNITE</strong>
         </p>
-        <aside>
             <img src="ASSETS/IMG/fortnite.png"/>
-        </aside>
-    </section>
 
-    <section>
+    </section>
+    </section>
+    <section class = "intento">
         <h2>Shotters</h2>
         <p>Este tipo de videojuegos consiste en disparos mediante armas, pueden ser de 2 tipos. </p>
         <hr>
             <h3>Modo historia</h3>
         <p> Consiste en un juego de disparo, de armas, en donde tienese que ir completando misiones y siguiendo una historia.
-        <aside>
+        <aside class = "modo_historia">
             <img src="ASSETS/IMG/callofduty.jpg"/>
         </aside>
         <h3>Competitivo</h3>
         <p> Consiste en un juego de 2 equipos o mas, en donde el equipo que sobreviva es el ganador por ronda</p>
-        <aside>
+        <aside class = "competitivo">
             <img src="ASSETS/IMG/valorant.jpg"/>
             <img src="ASSETS/IMG/csgo.jpg"/>
         </aside>
     </section>
+</aside>
 <hr>
+<aside class="footer_aside">
 <footer>
 <div>
-<h3>Mario Cavada Sepulveda - 23 años - 2026</h3>
-    <p>Actualmente jugando <strong>League of Legends y Valorant</strong></p>
+<h3>Mario Cavada Sepulveda</h3>
+    <h4>Actualmente jugando <strong>League of Legends y Valorant</strong></h4>
+    <div class="actual_juegos">
+        <img src="ASSETS/IMG/League%20of%20Legends.png">
+        <img src="ASSETS/IMG/valorant.jpg">
+    </div>
+
 </div>
 </footer>
+</aside>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
